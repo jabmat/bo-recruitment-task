@@ -22,6 +22,53 @@ body {
 
 /* <--icons */
 
+/* fonts --> */
+/* jost regular400 [16]: 1-header (items, button, search-placeholder), 3-ctas (buttons), 4-reviews (slider-content, company), 5-footer (s1, s3-content+buttons, s2-links, footer-rights) [20]: 3-ctas (content)  */
+
+.fs-content {
+	font-family: 'Jost', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.fs-contenth {
+	font-family: 'Jost', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.fs-contentm {
+	font-family: 'Jost', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+/* jost medium500 [18]: 5-footer (s2, s3-title) */
+.fs-sectiont {
+	font-family: 'Jost', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+/* jost semibold600 [16]: 4-reviews (slider-name/author) */
+.fs-contentsb {
+	font-family: 'Jost', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+/* titilium web regular400 [36]: 2-grid (imgs), 3-cta (title) [32]: 4-reviews (title)    */
+.fs-title {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+}
+
+/* font-family: 'Jost', sans-serif; */
+/* font-family: 'Titillium Web', sans-serif; */
+
+/* <-- fonts */
+
 /* header--> */
 header {
 	display: flex;
@@ -69,7 +116,6 @@ header {
 }
 
 /* navbar menu-options --> */
-/* drop-wrapper container */
 .drop-wrapper {
 	display: flex;
 	justify-content: space-around;
@@ -142,6 +188,14 @@ header {
 .mainb-button .mainb-title {
 	margin: auto;
 	/* UI */
+}
+
+.link-btn {
+	text-decoration: none;
+}
+
+.link-btn:hover {
+	opacity: 0.8;
 }
 
 .input-search {
@@ -220,20 +274,19 @@ header {
 	align-items: center;
 	height: auto;
 	width: 1224px;
-	margin: 72px auto;
+	margin: 0 auto;
 }
 
-.cta-title,
 .cta-content {
 	color: #fff;
+	margin: 6px 36px 24px 36px;
+	text-align: center;
+	line-height: 1.7em;
 }
 
 .cta-title {
-	margin-bottom: 6px;
-}
-
-.cta-content {
-	margin: 6px 0 24px 0;
+	color: #fff;
+	margin: 72px 0 0 0;
 }
 
 .ctab-container {
@@ -241,6 +294,7 @@ header {
 	justify-content: space-between;
 	width: 332px;
 	height: 40px;
+	margin-bottom: 72px;
 }
 
 .cta-btns {
@@ -281,13 +335,37 @@ header {
 .slider-container {
 	display: flex;
 	width: 100%;
+	margin: 20px 0 0 0;
 }
 
 .slider-container .splide-js {
-	flex-basis: 65.1143791%;
+	/* flex-basis: 65.1143791%; */
+	width: 797px;
 }
 
+.review-container {
+	/* UI */
+}
 
+.reviews-cta-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #0860c4;
+	width: 427px;
+}
+
+.slide-content {
+	margin: 64px;
+}
+
+.review-content {
+	/* UI */
+}
+
+.review-author {
+	color: #0860c4;
+}
 
 /* <-- review-slider */
 
@@ -303,9 +381,10 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	width: 1224px;
+	margin-top: 48px;
 }
 
-.footer-info, 
+.footer-info,
 .footer-contact {
 	width: 415px;
 }
@@ -314,16 +393,12 @@ footer {
 	margin: 24px 0 0 0;
 }
 
-.footeri-content {
-	/* czcionka */
-}
-
 .footer-main .footer-links {
 	width: 298px;
 }
 
-.footer-links .footers-title {
-	/* czcionka */
+.footer-links {
+	/* UI */
 }
 
 .footer-links a {
@@ -342,7 +417,6 @@ footer {
 	height: auto;
 	padding-top: 12px;
 }
-
 
 .footer-icons {
 	display: flex;

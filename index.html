@@ -7,6 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bo-recruitment-task</title>
     <link rel="stylesheet" href="./helpers/styles.css">
+
+    <!-- google fonts import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <!-- google fonts import -->
+
+    <!-- splide-JS-CSS-import -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let splide = new Splide('.splide');
+            splide.mount();
+        });
+    </script>
+    <!-- splide-JS-CSS-import -->
+
+    <!-- <script src="./js/script.js" defer type="module"></script> -->
 </head>
 
 <body>
@@ -20,7 +40,11 @@
 
                 <div class="menu-options">
                     <div class="drop-wrapper">
-                        <a href="#">Item</a>
+                        <a href="#">
+                            <span class="menu-item fs-content">
+                                Item
+                            </span>
+                        </a>
                         <div class="drop">
                             <button class="drop-opts">
                                 <!-- I've used menu-icon as a img, without using icons libraries -->
@@ -29,15 +53,18 @@
                                 </div>
                             </button>
                             <div class="drop-content">
-                                <a href="#">Subitem</a>
-                                <a href="#">Subitem</a>
-                                <a href="#">Subitem</a>
-
+                                <a href="#"><span class="fs-content">Subitem</span></a>
+                                <a href="#"><span class="fs-content">Subitem</span></a>
+                                <a href="#"><span class="fs-content">Subitem</span></a>
                             </div>
                         </div>
                     </div>
                     <div class="drop-wrapper">
-                        <a href="#">Item</a>
+                        <a href="#">
+                            <span class="menu-item fs-content">
+                                Item
+                            </span>
+                        </a>
                         <div class="drop">
                             <button class="drop-opts">
                                 <!-- I've used icon as a img, without using any icons libraries -->
@@ -46,30 +73,39 @@
                                 </div>
                             </button>
                             <div class="drop-content">
-                                <a href="#">Subitem</a>
-                                <a href="#">Subitem</a>
-                                <a href="#">Subitem</a>
+                                <a href="#"><span class="fs-content">Subitem</span></a>
+                                <a href="#"><span class="fs-content">Subitem</span></a>
+                                <a href="#"><span class="fs-content">Subitem</span></a>
                             </div>
                         </div>
                     </div>
                     <div class="item-wrapper">
-                        <a href="#">Item</a>
+                        <a href="#">
+                            <span class="menu-item fs-content">
+                                Item
+                            </span>
+                        </a>
                     </div>
                     <div class="item-wrapper">
-                        <a href="#">Item</a>
+                        <a href="#">
+                            <span class="menu-item fs-content">
+                                Item
+                            </span>
+                        </a>
                     </div>
                 </div>
             </nav>
 
             <nav class="button-search">
-                <button class="mainb-button">
-                    <span class="mainb-title">
-                        Menu button
-                    </span>
-                </button>
-
+                <a class="link-btn" href="#">
+                    <button class="mainb-button">
+                        <span class="mainb-title fs-content">
+                            Menu button
+                        </span>
+                    </button>
+                </a>
                 <div class="input-search">
-                    <input type="text" placeholder="Search">
+                    <input class="mainb-title fs-content" type="text" placeholder="Search">
                     <button class="search-btn">
                         <!-- I've used icon as a img, without using any icons libraries -->
                         <div class="icon-wrapper">
@@ -87,10 +123,8 @@
             <li class="link-box">
                 <a href="#">
                     <div class="linki-box">
-
                         <img src="./assets/images/links-grid-img-1.webp">
-
-                        <div class="linkt-center">Lorem Ipsum
+                        <div class="linkt-center fs-title">Lorem Ipsum
                         </div>
                     </div>
                 </a>
@@ -101,7 +135,7 @@
 
                         <img src="./assets/images/links-grid-img-2.webp">
 
-                        <div class="linkt-center">Lorem Ipsum
+                        <div class="linkt-center fs-title">Lorem Ipsum
                         </div>
                     </div>
                 </a>
@@ -112,7 +146,7 @@
 
                         <img src="./assets/images/links-grid-img-3.webp">
 
-                        <div class="linkt-center">Lorem Ipsum
+                        <div class="linkt-center fs-title">Lorem Ipsum
                         </div>
                     </div>
                 </a>
@@ -123,7 +157,7 @@
 
                         <img src="./assets/images/links-grid-img-4.webp">
 
-                        <div class="linkt-center">Lorem Ipsum
+                        <div class="linkt-center fs-title">Lorem Ipsum
                         </div>
                     </div>
                 </a>
@@ -134,7 +168,7 @@
 
                         <img src="./assets/images/links-grid-img-5.webp">
 
-                        <div class="linkt-center">Lorem Ipsum
+                        <div class="linkt-center fs-title">Lorem Ipsum
                         </div>
                     </div>
                 </a>
@@ -145,7 +179,7 @@
 
                         <img src="./assets/images/links-grid-img-6.webp">
 
-                        <div class="linkt-center">Lorem Ipsum
+                        <div class="linkt-center fs-title">Lorem Ipsum
                         </div>
                     </div>
                 </a>
@@ -156,17 +190,25 @@
     <!-- websiteBlock-3-cta -->
     <div class="ctas">
         <section class="cta-container">
-            <span class="cta-title">Lorem Ipsum</span>
-            <p class="cta-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac arcu tempus, iaculis
+            <span class="cta-title fs-title">Lorem Ipsum</span>
+            <p class="cta-content fs-contenth">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac arcu
+                tempus, iaculis
                 elit ac, euismod
                 urna.</p>
             <div class="ctab-container">
-                <button class="cta-btns">
-                    Secondary button
-                </button>
-                <button class="cta-btnp">
-                    Primary button
-                </button>
+                <a class="link-btn" href="#"><button class="cta-btns">
+                        <span class="mainb-title fs-content">
+                            Secondary button
+                        </span>
+                    </button>
+                </a>
+
+                <a class="link-btn" href="#"><button class="cta-btnp">
+                        <span class="mainb-title fs-content">
+                            Primary button
+                        </span>
+                    </button>
+                </a>
             </div>
         </section>
     </div>
@@ -174,13 +216,113 @@
     <!-- websiteBlock-4-review-slider -->
     <div class="reviews">
         <div class="review-container">
+            <span class="block-title fs-title">
+                Website block
+            </span>
+            <br>
             <div class="slider-container">
-                <section class="splide-js">
+                <div class="splide-js">
+                    <section class="splide" aria-label="Splide Basic HTML Example">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="slide-content">
+                                        <p class="review-content fs-contentm">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac arcu
+                                            tempus, iaculis elit ac, euismod urna. Donec in
+                                            eros placerat, cursus ipsum eu, sodales lacus. Orci varius natoque penatibus
+                                            et magnis dis parturient montes, nascetur
+                                            ridiculus mus. Mauris id orci justo. Proin pretium molestie massa ut mattis.
+                                            Duis eu tempus dui. Ut purus nulla, cursus
+                                            id consequat sed, lobortis ac nunc. Nam eget consectetur erat. Integer eget
+                                            tempus magna. Proin scelerisque dapibus
+                                            lacus, posuere gravida augue blandit sit amet.
+                                        </p>
 
-                </section>
-                <section class="reviews-cta">
+                                        <span class="review-author fs-contentsb">
+                                            John Smith
+                                        </span>
+                                        <br>
+                                        <span class="fs-content">
+                                            Blue Owl
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="slide-content">
+                                        <p class="review-content fs-contentm">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac arcu
+                                            tempus, iaculis elit ac, euismod urna. Donec in
+                                            eros placerat, cursus ipsum eu, sodales lacus. Orci varius natoque penatibus
+                                            et magnis dis parturient montes, nascetur
+                                            ridiculus mus. Mauris id orci justo. Proin pretium molestie massa ut mattis.
+                                            Duis eu tempus dui. Ut purus nulla, cursus
+                                            id consequat sed, lobortis ac nunc. Nam eget consectetur erat. Integer eget
+                                            tempus magna. Proin scelerisque dapibus
+                                            lacus, posuere gravida augue blandit sit amet.
+                                        </p>
 
+                                        <span class="review-author fs-contentsb">
+                                            John Smith
+                                        </span>
+                                        <br>
+                                        <span class="fs-content">
+                                            Blue Owl
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="slide-content">
+                                        <p class="review-content fs-contentm">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac arcu
+                                            tempus, iaculis elit ac, euismod urna. Donec in
+                                            eros placerat, cursus ipsum eu, sodales lacus. Orci varius natoque penatibus
+                                            et magnis dis parturient montes, nascetur
+                                            ridiculus mus. Mauris id orci justo. Proin pretium molestie massa ut mattis.
+                                            Duis eu tempus dui. Ut purus nulla, cursus
+                                            id consequat sed, lobortis ac nunc. Nam eget consectetur erat. Integer eget
+                                            tempus magna. Proin scelerisque dapibus
+                                            lacus, posuere gravida augue blandit sit amet.
+                                        </p>
+
+                                        <span class="review-author fs-contentsb">
+                                            John Smith
+                                        </span>
+                                        <br>
+                                        <span class="fs-content">
+                                            Blue Owl
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="reviews-cta-container">
+                    <span class="cta-title fs-title">Lorem Ipsum</span>
+                    <p class="cta-content fs-contenth">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
+                        arcu tempus,
+                        iaculis
+                        elit ac, euismod
+                        urna.</p>
+                    <div class="ctab-container">
+                        <a class="link-btn" href="#"><button class="cta-btns">
+                                <span class="mainb-title fs-content">
+                                    Secondary button
+                                </span>
+                            </button>
+                        </a>
+                        <a class="link-btn" href="#"><button class="cta-btnp">
+                                <span class="mainb-title fs-content">
+                                    Primary button
+                                </span>
+                            </button>
+                        </a>
+                    </div>
                 </section>
+
+
             </div>
         </div>
     </div>
@@ -192,61 +334,68 @@
                 <picture class="logo">
                     <img src="./assets/images/logo.webp" alt="logo representing this brand">
                 </picture>
-                <p class="footeri-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac arcu tempus,
+                <p class="footeri-content fs-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
+                    arcu tempus,
                     iaculis elit ac, euismod urna. Donec in
                     eros placerat, cursus ipsum eu, sodales lacus.</p>
             </section>
 
             <section class="footer-links">
-                <span class="footers-title">
+                <span class="footers-title fs-sectiont">
                     Quick links
                 </span>
                 <br>
                 <a href="#">
                     <div class="link-wrapper">
-                        Contact
+                        <span class="fs-content">Contact</span>
                     </div>
                 </a>
                 <a href="#">
                     <div class="link-wrapper">
-                        News
+                        <span class="fs-content">News
+                        </span>
                     </div>
                 </a>
                 <a href="#">
                     <div class="link-wrapper">
-                        About
+                        <span class="fs-content">About
+                        </span>
                     </div>
                 </a>
             </section>
 
             <section class="footer-contact">
-                <span class="footers-title">
+                <span class="footers-title fs-sectiont">
                     Contact us
                 </span>
                 <br>
-                <p class="footeri-content">
+                <p class="footeri-content fs-content">
                     Blue Owl<br>
                     Śniadeckich 15/2,<br>
                     60-773 Poznań | Poland
                 </p>
 
                 <div class="contactb-container">
-                    <button class="mainb-button">
-                        <div class="icon-wrapper">
-                            <img class="icon-img" src="./assets/icons/mail-left-icon.svg">
-                        </div>
-                        <span class="mainb-title">
-                            Send mail
-                        </span>
-                    </button>
-                    <button class="mainb-button">
-                        <div class="icon-wrapper">
-                            <img class="icon-img" src="./assets/icons/call-left-icon.svg">
-                        </div>
-                        <span class="mainb-title">
-                            Call us
-                        </span>
-                    </button>
+                    <a class="link-btn" href="#">
+                        <button class="mainb-button">
+                            <div class="icon-wrapper">
+                                <img class="icon-img" src="./assets/icons/mail-left-icon.svg">
+                            </div>
+                            <span class="mainb-title fs-content">
+                                Send mail
+                            </span>
+                        </button>
+                    </a>
+                    <a class="link-btn" href="#">
+                        <button class="mainb-button">
+                            <div class="icon-wrapper">
+                                <img class="icon-img" src="./assets/icons/call-left-icon.svg">
+                            </div>
+                            <span class="mainb-title fs-content">
+                                Call us
+                            </span>
+                        </button>
+                    </a>
                 </div>
             </section>
         </div>
@@ -273,7 +422,7 @@
                 </div>
             </a>
         </div>
-        <span class="footer-rights">
+        <span class="footer-rights fs-content">
             &copy; 2023 Blue Owl. All rights reserved
         </span>
     </footer>
