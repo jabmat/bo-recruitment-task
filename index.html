@@ -20,7 +20,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            let splide = new Splide('.splide');
+            let splide = new Splide('#splide-reviews');
+            splide.mount();
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            let splide = new Splide('#splide-links');
             splide.mount();
         });
     </script>
@@ -185,6 +189,67 @@
                 </a>
             </li>
         </ul>
+
+        <section id="splide-links" class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <a href="#">
+                            <div class="linki-box">
+                                <img src="./assets/images/links-grid-img-1.webp">
+                                <div class="linkt-center fs-title">Lorem Ipsum
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#">
+                            <div class="linki-box">
+                                <img src="./assets/images/links-grid-img-2.webp">
+                                <div class="linkt-center fs-title">Lorem Ipsum
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#">
+                            <div class="linki-box">
+                                <img src="./assets/images/links-grid-img-3.webp">
+                                <div class="linkt-center fs-title">Lorem Ipsum
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#">
+                            <div class="linki-box">
+                                <img src="./assets/images/links-grid-img-4.webp">
+                                <div class="linkt-center fs-title">Lorem Ipsum
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#">
+                            <div class="linki-box">
+                                <img src="./assets/images/links-grid-img-5.webp">
+                                <div class="linkt-center fs-title">Lorem Ipsum
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide">
+                        <a href="#">
+                            <div class="linki-box">
+                                <img src="./assets/images/links-grid-img-6.webp">
+                                <div class="linkt-center fs-title">Lorem Ipsum
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
 
     <!-- websiteBlock-3-cta -->
@@ -222,7 +287,7 @@
             <br>
             <div class="slider-container">
                 <div class="splide-js">
-                    <section class="splide" aria-label="Splide Basic HTML Example">
+                    <section id="splide-reviews" class="splide" aria-label="Splide Basic HTML Example">
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide">
